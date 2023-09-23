@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const url = `http://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=3&appid=16c3f2080c52d8b4abd59a79745842b2`;
+        const url = `https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=3&appid=16c3f2080c52d8b4abd59a79745842b2`;
         const response = await fetch(url);
 
         if (response.ok) {
