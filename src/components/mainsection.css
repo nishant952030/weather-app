@@ -1,0 +1,100 @@
+.weather__main-section {
+    max-width: 26rem;
+    height: 42rem;
+    border-radius: 1.5625rem;
+    background: linear-gradient(180deg, #1e1747 0%, rgb(14, 12, 26) 100%);
+    background-blend-mode: difference;
+}
+
+@media screen and (max-width:1064px) {
+    .weather__main-section {
+        max-width: 23rem;
+    }
+}
+
+.weather__main-section img {
+    width: 80%;
+    margin-top: -4rem;
+    margin-left: 2.5rem;
+
+}
+
+.weather__main-section .thunder {
+    margin-top: -2rem;
+}
+
+.weather__main-section .partlycloudy {
+    margin-top: -1rem;
+}
+
+.weather__main-section .sunny {
+    margin-top: -2rem;
+    width: 70%;
+    margin-left: 3.8rem
+}
+
+.weather__main-section .cloudy {
+    margin-top: -4rem;
+    width: 80%;
+    margin-left: 2.5rem
+}
+
+.weather__main-section h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+    opacity: .6;
+    font-family: cursive;
+}
+
+.current__weather_feel {
+    position: relative;
+    top: -21rem;
+    left: 17rem;
+    color: #fff;
+    font-family: cursive;
+    line-height: .3rem;
+
+}
+
+.weather__main-section .weather__main-section__imgData h1 {
+    position: relative;
+    top: -13rem;
+    left: -7rem;
+    font-size: 5.4rem;
+    font-family: cursive;
+    z-index: -.9
+
+}
+
+.temp-min-max-feel {
+    position: relative;
+    top: 6rem;
+}
+
+@media screen and (max-width:1024px) {}
+
+.weather__details {
+    color: #fff;
+    line-height: .5rem;
+    font-family: cursive;
+    position: relative;
+    top: -12rem;
+    font-size: 1.5rem;
+    left: 1.5rem;
+}
+@media screen and (max-width:1064px){
+    .weather__main-section .weather__main-section__imgData h1{
+        font-size: 4.5rem;
+        left:-6rem;
+    }
+    .weather__main-section
+    {
+        height: 36.9rem;
+    }
+    .current__weather_feel{
+      top:-20rem;
+      left: 14rem;
+    }
+}
+    
