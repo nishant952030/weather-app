@@ -24,10 +24,13 @@ function HourSection({ weatherData, time, hour }) {
           (precipitation >= 51 && precipitation <= 75 && cloudcover >= 51 && cloudcover <= 75 ? <img className='lightrain' src={lightRain} alt='Weather' /> :
             (precipitation >= 0 && precipitation <= 10 && cloudcover >= 11 && cloudcover <= 50 ? <img className='cloudyimage' src={cloudyImage} alt='Weather' /> :
               (precipitation >= 0 && precipitation <= 100 && cloudcover >= 51 && cloudcover <= 75 ? <img className='rainy' src={rainy} alt='Weather' /> :
-                (precipitation >= 0 && precipitation <= 100 && cloudcover >= 76 && cloudcover <= 100 ? <img className='partlycloudy' src={partlyCloudy} alt='Weather' /> :
+                (precipitation >= 0 && precipitation <= 100 && cloudcover >= 76 && cloudcover <= 100 ? <img className='thunder' src={thunder} alt='Weather' /> :
                   <img className='invalid' src={invalid} alt='Weather' />)))))}
-      <p>{precipitation}</p>
-      <p>{cloudcover}</p>
+      <p className='hour-temp'>{Math.ceil(weatherData.hourly.temperature_2m[hour])}°</p>
+        <p className='hour-humidity'>Humidity: {Math.ceil(weatherData.hourly.relativehumidity_2m[hour])}%</p>
+        <p className='hour-preci'>Precip: {Math.ceil(weatherData.hourly.precipitation_probability[hour])}%</p>
+        <p className='hour-wind'>Wind: {Math.ceil(weatherData.hourly.windspeed_10m[hour])}mph</p>
+
     </div>
   )
 }

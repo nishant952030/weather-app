@@ -36,6 +36,7 @@
 }
 
 .hourlysection__small {
+    display:inline-block;
     margin-right: .5rem;
     margin-left: .5rem;
     height: 11rem;
@@ -60,4 +61,51 @@
 .hourly_main_section .sunny{
     width:70%;
     margin-left: 1.1rem;
+}
+.hourly_main_section .rainy{
+    margin-top:-3rem;   
+}
+.hourly_main_section .thunder{
+    margin-bottom:.5rem ;   
+}
+
+.hour-temp{
+    color: #fff;
+    font-family: cursive;
+    font-size: 1rem;
+    position: relative;
+    top:-2rem;
+    left: .5rem;
+}
+.hour-humidity{
+    color: #fff;
+    font-family: cursive;
+    position: relative;
+    top: -3rem;
+    font-size: .8rem;
+    left: .5rem;
+}
+.hour-preci{
+    color: #fff;
+    font-family: cursive;
+    position: relative;
+    top: -3.8rem;
+    font-size: .8rem;
+    left: .5rem;
+}
+.hour-wind{
+    color: #fff;
+    font-family: cursive;
+    position: relative;
+    top: -4.55rem;
+    font-size: .8rem;
+    left: .5rem;
+}
+@media screen and (max-width:1024px) {
+    
+
+.hourly_main_section{
+    width: 100%;
+    margin-top: 2rem;
+}
 }

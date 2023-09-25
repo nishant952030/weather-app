@@ -1,34 +1,48 @@
-.App{
-    padding: 7rem 13rem 0 13rem ;
+.App {
+    padding: 7rem 13rem 0 13rem;
 }
+
 @media screen and (max-width:1024px) {
-    .App{
+    .App {
         padding: 2rem
     }
 }
+
 @media screen and (max-width:1666px) {
-    .App{
+    .App {
         padding: 7rem 10rem 0 10rem;
     }
 }
+
 @media screen and (max-width:1568px) {
-    .App{
+    .App {
         padding: 5rem 6rem 0 6rem;
     }
 }
+
 @media screen and (max-width:1568px) {
-    .App{
+    .App {
         padding: 5rem 4rem 0 4rem;
     }
 }
+
 @media screen and (max-width:1568px) {
-    .App{
+    .App {
         padding: 4rem 2rem 0 2rem;
     }
 }
+
 @media screen and (max-width:1096px) {
-    .App{
+    .App {
         padding: 4rem 1rem 0 1rem;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .App .container {
+        display: flex;
+        flex-direction:  column;
     }
 
 }
